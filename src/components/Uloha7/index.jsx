@@ -9,10 +9,10 @@ Zadání 4. Nastav prvku `ukazatel-uspechu__postup` šířku podle stavové prom
 */
 
 const UkazatelPokroku = ({ barva }) => {
-  const [barva, setBarva] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   const handleClick = () => {
-    setBarva((prevBarva) => Math.min(prevColor + 10, 100));
+    setProgress((prevProgress) => Math.min(prevProgress + 10, 100));
   };
   return (
     <div className="ukazatel-uspechu">
@@ -20,7 +20,7 @@ const UkazatelPokroku = ({ barva }) => {
         <div
           className="ukazatel-uspechu__postup"
           style={{
-            width: `${barva}%`,
+            width: `${progress}%`,
             backgroundColor: barva,
           }}
         ></div>
