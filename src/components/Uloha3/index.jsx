@@ -17,13 +17,10 @@ Zadání 4: Vypište v atributu `alt` správné číslo.
 */
 
 export const Uloha3 = () => {
-  const [cisloNaKostce, setCisloNaKostce] = useState(1 - 6); /* jedna až šest */
+  const [cisloNaKostce, setCisloNaKostce] = useState(1); /* jedna až šest */
 
   const changeNumber = () => {
-    setCisloNaKostce(cisloNaKostce + 1);
-    if ((cisloNaKostce = 6)) {
-      setCisloNaKostce(1);
-    }
+    setCisloNaKostce((prevCislo) => (prevCislo === 6 ? 1 : prevCislo + 1));
   };
 
   return (
@@ -32,11 +29,13 @@ export const Uloha3 = () => {
         src={diceUrls[cisloNaKostce - 1]} /* indexy se číslují od nuly */
         width={60}
         height={60}
-        alt="Kostka s číslem {changeNumber}"
+        alt={`Kostka s číslem ${cisloNaKostce}`}
         className="kostka__ikona"
       />
-      <p className="kostka__text">Na kostce je číslo {changeNumber}.</p>
-      <button className="kostka__akce">další</button>
+      <p className="kostka__text">Na kostce je číslo {cisloNaKostce}.</p>
+      <button className="kostka__akce" onClick={changeNumber}>
+        další
+      </button>
     </>
   );
 };
