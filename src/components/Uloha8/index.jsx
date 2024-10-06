@@ -7,19 +7,31 @@ Zadání 3: Po kliknutí na tlačítko změň `možná` na `ano`, `ano` na `ne`,
 */
 
 export const Uloha8 = () => {
-  const [pocasi, setPocasi] = useState('možná');
+  const [pocasi1, setPocasi1] = useState('možná');
+  const [pocasi2, setPocasi2] = useState('možná');
 
-  const handleClick = () => {
-    setPocasi((pocasi) => {
-      if (pocasi === 'možná') return 'ano';
-      if (pocasi === 'ano') return 'ne';
+  const handleClick1 = () => {
+    setPocasi1((pocasi1) => {
+      if (pocasi1 === 'možná') return 'ano';
+      if (pocasi1 === 'ano') return 'ne';
       return 'možná';
     });
   };
+
+  const handleClick2 = () => {
+    setPocasi2((pocasi2) => {
+      if (pocasi2 === 'možná') return 'ano';
+      if (pocasi2 === 'ano') return 'ne';
+      return 'možná';
+    });
+  };
+
   return (
     <>
-      <h3>Prší v Brně: {pocasi}</h3>
-      <button onClick={handleClick}>změnit</button>
+      <h3>Prší v Praze: {pocasi1}</h3>
+      <button onClick={handleClick1}>Změnit</button>
+      <h3>Prší v Brně:{pocasi2}</h3>
+      <button onClick={handleClick2}>Změnit</button>
     </>
   );
 };
