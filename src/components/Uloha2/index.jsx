@@ -47,6 +47,7 @@ export const Uloha2 = () => {
   return (
     <>
       <Pocitadlo />
+      <Pocitadlo />
     </>
   );
 };

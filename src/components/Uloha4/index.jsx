@@ -17,8 +17,11 @@ const images = [
   'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
   'https://images.unsplash.com/photo-1494783367193-149034c05e8f',
   'https://images.unsplash.com/photo-1521747116042-5a810fda9664',
-  'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
+  'https://images.unsplash.com/photo-1546189513-0873093d4013',
+  'https://images.unsplash.com/photo-1557733686-3f8641465d21',
+  'https://images.unsplash.com/photo-1541539924877-6dc3d2adf8d3',
+  'https://images.unsplash.com/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHNlYXxlbnwwfDB8MHx8fDI%3D',
+  'https://images.unsplash.com/26/pelican.jpg?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHNlYXxlbnwwfDB8MHx8fDI%3D',
 ];
 
 export const Uloha4 = () => {
