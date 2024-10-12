@@ -39,4 +39,12 @@ export const Uloha6 = () => {
   );
 };
 
-const ukoly = ['Zamést', 'Pověsit prádlo', 'Umýt okna', 'Vynést koš'];
+const ukoly = [
+  'Zamést',
+  'Pověsit prádlo',
+  'Umýt okna',
+  'Vynést koš',
+  'Nakoupit',
+  'Uvařit oběd',
+  'Udělat úkoly',
+];
