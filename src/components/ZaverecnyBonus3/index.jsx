@@ -8,9 +8,8 @@ Nápověda: Pokud je v `casVSekundach` nula, pak je 0:00:00. Pokud je v `casVSek
   0:01:00. Pokud je v `casVSekundach` 67, pak je 0:01:07.
 */
 
-/* padStart(targetLength.padString)
+//padStart(targetLength.padString)
 
-*/ 
 
 export const ZaverecnyBonus3 = () => {
   const casVSekundach = useCasVSekundach();
